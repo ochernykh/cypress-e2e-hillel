@@ -10,7 +10,9 @@
     "test:qauto": "cypress run --config-file cypress/config/qauto.config.js",
     "test:qauto2": "cypress run --config-file cypress/config/qauto2.config.js",
     "open:qauto": "cypress open --config-file cypress/config/qauto.config.js",
-    "open:qauto2": "cypress open --config-file cypress/config/qauto2.config.js"
+    "open:qauto2": "cypress open --config-file cypress/config/qauto2.config.js",
+    "test:api": "cypress run --spec 'cypress/e2e/api/*.cy.js'",
+    "open:api": "cypress open --spec 'cypress/e2e/api/*.cy.js'"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/ochernykh/cypress-e2e-hillel#readme",
   "devDependencies": {
-    "cypress": "^14.4.0"
+    "cypress": "^14.4.0",
+    "cypress-plugin-api": "^2.11.2"
   }
 }
